@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<body>
+<button id="btn">单击这里</button>
+<script>
+function demo1(){
+    var m=5;
+    return m;
+}
+function demo2(){
+var m=55;
+alert(m);
+}
+var a=demo1;//a是整个函数体，是一个函数对象
+var b=demo1();//b是函数执行后返回的值5
+alert(demo1);
+alert(demo1());
+
+var e=document.getElementById("btn");
+e.addEventListener("click",demo2);
+e.addEventListener("click",demo2());
+</script>
+</body>
+</html>
